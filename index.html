@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Rajmahal Grand – Luxury Hotel & Dining</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@1,400;1,500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- PRELOADER -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-logo">THE RAJMAHAL GRAND</div>
+      <div class="preloader-bar"><div class="preloader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-logo">
+      <span class="logo-icon">✦</span>
+      <span>THE RAJMAHAL GRAND</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#book-table">Reserve</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#book-table" class="nav-cta">Book a Table</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ══ SECTION 1 · HERO ══ -->
+  <section id="hero">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&q=80" alt="Fine dining" class="hero-bg-img"/>
+      <div class="hero-overlay"></div>
+      <div class="hero-particles" id="particles"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Est. 2024 · Varanasi, India</p>
+      <h1 class="hero-title">Where Tradition<br/><em>Meets Elegance</em></h1>
+      <p class="hero-sub">An exquisite culinary journey across Indian, Western & International flavours — served with royal grace.</p>
+      <div class="hero-actions">
+        <a href="#menu" class="btn-primary">Explore Menu</a>
+        <a href="#book-table" class="btn-outline">Reserve a Table</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num" data-target="150">0</span><span class="stat-label">Menu Items</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num" data-target="12">0</span><span class="stat-label">Award-Winning Chefs</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num" data-target="8500">0</span><span class="stat-label">Happy Guests</span></div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll to explore</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ══ SECTION 2 · ABOUT ══ -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visuals">
+          <div class="about-img-main">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80" alt="Fine dining hall" class="about-img"/>
+          </div>
+          <div class="about-img-grid">
+            <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400&q=80" alt="Cellar" class="about-img"/>
+            <img src="https://images.unsplash.com/photo-1581299894007-aaa50297cf16?w=400&q=80" alt="Live kitchen" class="about-img"/>
+          </div>
+          <div class="about-badge">
+            <span class="badge-num">5★</span>
+            <span class="badge-text">Luxury<br/>Experience</span>
+          </div>
+        </div>
+        <div class="about-text">
+          <p class="section-eyebrow">Our Story</p>
+          <h2 class="section-title">A Sanctuary of Flavour & Heritage</h2>
+          <p class="about-desc">Nestled in the heart of Varanasi, The Rajmahal Grand is a celebration of India's culinary soul fused with world-class hospitality. Our kitchens are helmed by master chefs who have trained across continents.</p>
+          <div class="about-pillars">
+            <div class="pillar"><div class="pillar-icon"><i class="fas fa-leaf"></i></div><div><strong>Farm to Table</strong><p>Locally sourced, seasonal ingredients from verified farms.</p></div></div>
+            <div class="pillar"><div class="pillar-icon"><i class="fas fa-crown"></i></div><div><strong>Royal Recipes</strong><p>Dishes inspired by Mughal and Rajput culinary traditions.</p></div></div>
+            <div class="pillar"><div class="pillar-icon"><i class="fas fa-globe-asia"></i></div><div><strong>World Cuisines</strong><p>Authentic flavours from France, Italy, Japan, Lebanon & more.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ SECTION 3 · MENU ══ -->
+  <section id="menu">
+    <div class="menu-header">
+      <p class="section-eyebrow light">The Menu</p>
+      <h2 class="section-title light">Crafted With Passion</h2>
+      <p class="menu-intro">Six distinct culinary worlds, one spectacular destination.</p>
+    </div>
+
+    <div class="menu-tabs-wrap">
+      <div class="menu-tabs" id="menuTabs">
+        <button class="tab-btn active" data-tab="indian"><i class="fas fa-pepper-hot"></i> Indian</button>
+        <button class="tab-btn" data-tab="western"><i class="fas fa-hamburger"></i> Western</button>
+        <button class="tab-btn" data-tab="international"><i class="fas fa-globe"></i> International</button>
+        <button class="tab-btn" data-tab="desserts"><i class="fas fa-ice-cream"></i> Desserts</button>
+        <button class="tab-btn" data-tab="beverages"><i class="fas fa-cocktail"></i> Beverages</button>
+        <button class="tab-btn" data-tab="breakfast"><i class="fas fa-coffee"></i> Breakfast</button>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <!-- ── INDIAN ── -->
+      <div class="menu-panel active" id="tab-indian">
+        <div class="menu-category-header">
+          <div class="cat-tag">🇮🇳 Indian Cuisine</div>
+          <p>Authentic flavours from the royal kitchens of North India to the coastal spices of the South.</p>
+        </div>
+        <div class="menu-grid">
+
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=600&q=80" alt="Dal Makhani"/>
+              <span class="menu-badge veg">VEG</span>
+            </div>
+            <div class="menu-card-body">
+              <h4>Dal Makhani</h4>
+              <p>Black lentils slow-cooked overnight with butter and aromatic spices.</p>
+              <div class="menu-footer"><span class="price">₹ 380</span><button class="add-btn" onclick="addToCart('Dal Makhani',380)">Add +</button></div>
+            </div>
+          </div>
+
+          <div class="menu-card featured">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=600&q=80" alt="Dum Biryani"/>
+              <span class="menu-badge chef">CHEF'S PICK</span>
+            </div>
+            <div class="menu-card-body">
+              <h4>Dum Biryani</h4>
+              <p>Royal Hyderabadi biryani sealed in a handi with saffron and caramelised onions.</p>
+              <div class="menu-footer"><span class="price">₹ 680</span><button class="add-btn" onclick="addToCart('Dum Biryani',680)">Add +</button></div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=600&q=80" alt="Paneer Lababdar"/>
+              <span class="menu-badge veg">VEG</span>
+            </div>
+            <div class="menu-card-body">
+              <h4>Paneer Lababdar</h4>
+              <p>Cottage cheese cubes in a rich tomato-cashew gravy finished with cream.</p>
+              <div class="menu-footer"><span class="price">₹ 420</span><button class="add-btn" onclick="addToCart('Paneer Lababdar',420)">Add +</button></div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1548943487-a2e4e43b4853?w=600&q=80" alt="Raan-e-Rajmahal"/>
+              <span class="menu-badge nonveg">NON-VEG</span>
+            </div>
+            <div class="menu-card-body">
+              <h4>Raan-e-Rajmahal</h4>
+              <p>Slow-roasted leg of lamb marinated in 22 spices — our signature dish.</p>
+              <div class="menu-footer"><span class="price">₹ 1,400</span><button class="add-btn" onclick="addToCart('Raan-e-Rajmahal',1400)">Add +</button></div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=600&q=80" alt="Butter Chicken"/>
+              <span class="menu-badge nonveg">NON-VEG</span>
+            </div>
+            <div class="menu-card-body">
+              <h4>Butter Chicken</h4>
+              <p>Tender chicken in a velvety tomato-cream sauce with fenugreek.</p>
+              <div class="menu-footer"><span class="price">₹ 520</span><button class="add-btn" onclick="addToCart('Butter Chicken',520)">Add +</button></div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=600&q=80" alt="Avadhi Shahi Korma"/>
+              <span class="menu-badge veg">VEG</span>
+            </div>
+            <div class="menu-card-body">
+              <h4>Avadhi Shahi Korma</h4>
+              <p>Vegetable korma from the Lucknowi royal kitchens — fragrant and creamy.</p>
+              <div class="menu-footer"><span class="price">₹ 460</span><button class="add-btn" onclick="addToCart('Avadhi Shahi Korma',460)">Add +</button></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ── WESTERN ── -->
+      <div class="menu-panel" id="tab-western">
+        <div class="menu-category-header">
+          <div class="cat-tag">🌍 Western Cuisine</div>
+          <p>Classic European and American favourites, prepared with finesse and premium ingredients.</p>
+        </div>
+        <div class="menu-grid">
+
+          <div class="menu-card featured">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1558030006-450675393462?w=600&q=80" alt="Wagyu Steak"/>
+              <span class="menu-badge chef">CHEF'S PICK</span>
+            </div>
+            <div class="menu-card-body">
+              <h4>Wagyu Beef Steak</h4>
+              <p>Japanese Wagyu A5 served with truffle butter and asparagus gratin.</p>
+              <div class="menu-footer"><span class="price">₹ 3,200</span><button class="add-btn" onclick="addToCart('Wagyu Beef Steak',3200)">Add +</button></div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=600&q=80" alt="Truffle Margherita Pizza"/>
+              <span class="menu-badge veg">VEG</span>
+            </div>
+            <div class="menu-card-body">
+              <h4>Truffle Margherita Pizza</h4>
+              <p>Wood-fired Neapolitan crust, buffalo mozzarella, fresh basil, truffle oil.</p>
+              <div class="menu-footer"><span class="price">₹ 780</span><button class="add-btn" onclick="addToCart('Truffle Margherita Pizza',780)">Add +</button></div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=600&q=80" alt="Pan-Seared Salmon"/>
+              <span class="menu-badge nonveg">NON-VEG</span>
+            </div>
+            <div class="menu-card-body">
+              <h4>Pan-Seared Salmon</h4>
+              <p>Atlantic salmon, lemon beurre blanc, capers, and creamy potato gratin.</p>
+              <div class="menu-footer"><span class="price">₹ 1,100</span><button class="add-btn" onclick="addToCart('Pan-Seared Salmon',1100)">Add +</button></div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1476124369491-e7addf5db371?w=600&q=80" alt="Mushroom Risotto"/>
+              <span class="menu-badge veg">VEG</span>
+            </div>
+            <div class="menu-card-body">
+              <h4>Mushroom Risotto</h4>
+              <p>Arborio rice, wild porcini, aged Parmesan, white wine reduction.</p>
+              <div class="menu-footer"><span class="price">₹ 680</span><button class="add-btn" onclick="addToCart('Mushroom Risotto',680)">Add +</button></div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1432139509613-5c4255815697?w=600&q=80" alt="Chicken Cordon Bleu"/>
+              <span class="menu-badge nonveg">NON-VEG</span>
+            </div>
+            <div class="menu-card-body">
+              <h4>Chicken Cordon Bleu</h4>
+              <p>Stuffed chicken breast with ham and Gruyère, crispy panko crust.</p>
+              <div class="menu-footer"><span class="price">₹ 820</span><button class="add-btn" onclick="addToCart('Chicken Cordon Bleu',820)">Add +</button></div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?w=600&q=80" alt="French Onion Soup"/>
+              <span class="menu-badge veg">VEG</span>
+            </div>
+            <div class="menu-card-body">
+              <h4>Classic French Onion Soup</h4>
+              <p>Slow-caramelised onions, beef consommé, Gruyère crouton.</p>
+              <div class="menu-footer"><span class="price">₹ 380</span><button class="add-btn" onclick="addToCart('French Onion Soup',380)">Add +</button></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ── INTERNATIONAL ── -->
+      <div class="menu-panel" id="tab-international">
+        <div class="menu-category-header">
+          <div class="cat-tag">🌐 International Cuisine</div>
+          <p>A passport on a plate — authentic recipes from Japan, Lebanon, Mexico, and beyond.</p>
+        </div>
+        <div class="menu-grid">
+
+          <div class="menu-card featured">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?w=600&q=80" alt="Omakase Sushi Set"/>
+              <span class="menu-badge chef">CHEF'S PICK</span>
+            </div>
+            <div class="menu-card-body">
+              <h4>Omakase Sushi Set</h4>
+              <p>12-piece chef-selected nigiri and maki, premium grade tuna and salmon.</p>
+              <div class="menu-footer"><span class="price">₹ 2,400</span><button class="add-btn" onclick="addToCart('Omakase Sushi Set',2400)">Add +</button></div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=600&q=80" alt="Thai Green Curry"/>
+              <span class="menu-badge nonveg">NON-VEG</span>
+            </div>
+            <div class="menu-card-body">
+              <h4>Thai Green Curry</h4>
+              <p>Fragrant coconut green curry with chicken, Thai basil and kaffir lime.</p>
+              <div class="menu-footer"><span class="price">₹ 720</span><button class="add-btn" onclick="addToCart('Thai Green Curry',720)">Add +</button></div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=600&q=80" alt="Lebanese Mezze"/>
+              <span class="menu-badge veg">VEG</span>
+            </div>
+            <div class="menu-card-body">
+              <h4>Lebanese Mezze Platter</h4>
+              <p>Hummus, baba ganoush, tabbouleh, fattoush, falafel and warm pita.</p>
+              <div class="menu-footer"><span class="price">₹ 960</span><button class="add-btn" onclick="addToCart('Lebanese Mezze Platter',960)">Add +</button></div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?w=600&q=80" alt="Moroccan Lamb Tagine"/>
+              <span class="menu-badge nonveg">NON-VEG</span>
+            </div>
+            <div class="menu-card-body">
+              <h4>Moroccan Lamb Tagine</h4>
+              <p>Slow-braised lamb with preserved lemon, olives, harissa and couscous.</p>
+              <div class="menu-footer"><span class="price">₹ 1,280</span><button class="add-btn" onclick="addToCart('Moroccan Lamb Tagine',1280)">Add +</button></div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1496116218417-1a781b1c416c?w=600&q=80" alt="Dim Sum Basket"/>
+              <span class="menu-badge veg">VEG</span>
+            </div>
+            <div class="menu-card-body">
+              <h4>Dim Sum Basket</h4>
+              <p>Steamed Cantonese dumplings — har gow, siu mai, and char siu bao.</p>
+              <div class="menu-footer"><span class="price">₹ 640</span><button class="add-btn" onclick="addToCart('Dim Sum Basket',640)">Add +</button></div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600&q=80" alt="Mexican Birria Tacos"/>
+              <span class="menu-badge nonveg">NON-VEG</span>
+            </div>
+            <div class="menu-card-body">
+              <h4>Mexican Birria Tacos</h4>
+              <p>Slow-braised beef birria, consommé for dipping, cotija cheese, cilantro.</p>
+              <div class="menu-footer"><span class="price">₹ 860</span><button class="add-btn" onclick="addToCart('Mexican Birria Tacos',860)">Add +</button></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ── DESSERTS ── -->
+      <div class="menu-panel" id="tab-desserts">
+        <div class="menu-category-header">
+          <div class="cat-tag">🍮 Desserts & Sweets</div>
+          <p>Every meal deserves a sweet finale — from Gulab Jamun to Crème Brûlée.</p>
+        </div>
+        <div class="menu-grid">
+
+          <div class="menu-card featured">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1666186715321-6e4a0b63f32e?w=600&q=80" alt="Gulab Jamun"/>
+              <span class="menu-badge chef">CHEF'S PICK</span>
+            </div>
+            <div class="menu-card-body">
+              <h4>Rajmahal Gulab Jamun</h4>
+              <p>Khoya dumplings soaked in rose-saffron syrup, served with rabri.</p>
+              <div class="menu-footer"><span class="price">₹ 320</span><button class="add-btn" onclick="addToCart('Gulab Jamun',320)">Add +</button></div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?w=600&q=80" alt="Crème Brûlée"/>
+              <span class="menu-badge veg">VEG</span>
+            </div>
+            <div class="menu-card-body">
+              <h4>Crème Brûlée</h4>
+              <p>Classic French custard with caramelised sugar and Madagascar vanilla.</p>
+              <div class="menu-footer"><span class="price">₹ 380</span><button class="add-btn" onclick="addToCart('Crème Brûlée',380)">Add +</button></div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1624353365286-3f8d62daad51?w=600&q=80" alt="Chocolate Fondant"/>
+              <span class="menu-badge veg">VEG</span>
+            </div>
+            <div class="menu-card-body">
+              <h4>Chocolate Fondant</h4>
+              <p>Warm Valrhona chocolate lava cake, served with pistachio ice cream.</p>
+              <div class="menu-footer"><span class="price">₹ 440</span><button class="add-btn" onclick="addToCart('Chocolate Fondant',440)">Add +</button></div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1626132827021-15dd2d58dd51?w=600&q=80" alt="Rasmalai Tower"/>
+              <span class="menu-badge veg">VEG</span>
+            </div>
+            <div class="menu-card-body">
+              <h4>Rasmalai Tower</h4>
+              <p>Soft paneer medallions in chilled saffron milk with pistachios and rose petals.</p>
+              <div class="menu-footer"><span class="price">₹ 340</span><button class="add-btn" onclick="addToCart('Rasmalai Tower',340)">Add +</button></div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1501443762994-82bd5dace89a?w=600&q=80" alt="Kulfi"/>
+              <span class="menu-badge veg">VEG</span>
+            </div>
+            <div class="menu-card-body">
+              <h4>Kulfi on a Stick</h4>
+              <p>House-made mango, pistachio & rose kulfi with a falooda drizzle.</p>
+              <div class="menu-footer"><span class="price">₹ 260</span><button class="add-btn" onclick="addToCart('Kulfi on a Stick',260)">Add +</button></div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=600&q=80" alt="Tiramisu"/>
+              <span class="menu-badge veg">VEG</span>
+            </div>
+            <div class="menu-card-body">
+              <h4>Tiramisu Classico</h4>
+              <p>Espresso-soaked ladyfingers, mascarpone cream, premium cocoa dust.</p>
+              <div class="menu-footer"><span class="price">₹ 420</span><button class="add-btn" onclick="addToCart('Tiramisu Classico',420)">Add +</button></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ── BEVERAGES ── -->
+      <div class="menu-panel" id="tab-beverages">
+        <div class="menu-category-header">
+          <div class="cat-tag">🍹 Beverages & Cocktails</div>
+          <p>Artisanal beverages, signature mocktails and curated non-alcoholic cocktails.</p>
+        </div>
+        <div class="menu-grid">
+
+          <div class="menu-card featured">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=600&q=80" alt="Rajmahal Royale"/>
+              <span class="menu-badge chef">SIGNATURE</span>
+            </div>
+            <div class="menu-card-body">
+              <h4>Rajmahal Royale</h4>
+              <p>Rose syrup, lychee, mint, sparkling water — our iconic house mocktail.</p>
+              <div class="menu-footer"><span class="price">₹ 280</span><button class="add-btn" onclick="addToCart('Rajmahal Royale',280)">Add +</button></div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=600&q=80" alt="Kesar Thandai"/>
+              <span class="menu-badge veg">VEG</span>
+            </div>
+            <div class="menu-card-body">
+              <h4>Kesar Thandai</h4>
+              <p>Chilled saffron milk with almonds, rose and cardamom — a Varanasi classic.</p>
+              <div class="menu-footer"><span class="price">₹ 200</span><button class="add-btn" onclick="addToCart('Kesar Thandai',200)">Add +</button></div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&q=80" alt="Cold Brew Matcha Latte"/>
+              <span class="menu-badge veg">VEG</span>
+            </div>
+            <div class="menu-card-body">
+              <h4>Cold Brew Matcha Latte</h4>
+              <p>Japanese ceremonial grade matcha, oat milk, light honey foam.</p>
+              <div class="menu-footer"><span class="price">₹ 320</span><button class="add-btn" onclick="addToCart('Matcha Latte',320)">Add +</button></div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1601924582971-ef5e8d8a7c0c?w=600&q=80" alt="Virgin Mojito"/>
+              <span class="menu-badge veg">VEG</span>
+            </div>
+            <div class="menu-card-body">
+              <h4>Virgin Mojito</h4>
+              <p>Crushed mint, lime juice, brown sugar, soda — refreshing and zesty.</p>
+              <div class="menu-footer"><span class="price">₹ 220</span><button class="add-btn" onclick="addToCart('Virgin Mojito',220)">Add +</button></div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Masala Chai Flight"/>
+              <span class="menu-badge veg">VEG</span>
+            </div>
+            <div class="menu-card-body">
+              <h4>Masala Chai Flight</h4>
+              <p>Three regional chai varieties — Kashmiri Kahwa, Assam, and Mumbai cutting.</p>
+              <div class="menu-footer"><span class="price">₹ 240</span><button class="add-btn" onclick="addToCart('Masala Chai Flight',240)">Add +</button></div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1527661591475-527312dd65f5?w=600&q=80" alt="Mango Lassi"/>
+              <span class="menu-badge veg">VEG</span>
+            </div>
+            <div class="menu-card-body">
+              <h4>Mango Lassi Supreme</h4>
+              <p>Alphonso mango, Greek yoghurt, saffron threads, crushed cardamom.</p>
+              <div class="menu-footer"><span class="price">₹ 200</span><button class="add-btn" onclick="addToCart('Mango Lassi Supreme',200)">Add +</button></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ── BREAKFAST ── -->
+      <div class="menu-panel" id="tab-breakfast">
+        <div class="menu-category-header">
+          <div class="cat-tag">☀️ Breakfast & Brunch</div>
+          <p>Start your day right with our chef-crafted morning specialties.</p>
+        </div>
+        <div class="menu-grid">
+
+          <div class="menu-card featured">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?w=600&q=80" alt="Grand Brunch Platter"/>
+              <span class="menu-badge chef">BESTSELLER</span>
+            </div>
+            <div class="menu-card-body">
+              <h4>Grand Brunch Platter</h4>
+              <p>Eggs Benedict, crispy bacon, smashed avocado, hash browns, fresh OJ.</p>
+              <div class="menu-footer"><span class="price">₹ 780</span><button class="add-btn" onclick="addToCart('Grand Brunch Platter',780)">Add +</button></div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1630383249896-424e482df921?w=600&q=80" alt="Masala Dosa"/>
+              <span class="menu-badge veg">VEG</span>
+            </div>
+            <div class="menu-card-body">
+              <h4>Masala Dosa</h4>
+              <p>Crisp rice crepe filled with spiced potato, coconut chutney, sambar.</p>
+              <div class="menu-footer"><span class="price">₹ 280</span><button class="add-btn" onclick="addToCart('Masala Dosa',280)">Add +</button></div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1590301157890-4810ed352733?w=600&q=80" alt="Shakshuka"/>
+              <span class="menu-badge nonveg">NON-VEG</span>
+            </div>
+            <div class="menu-card-body">
+              <h4>Shakshuka</h4>
+              <p>Poached eggs in spiced tomato sauce, feta, parsley, sourdough toast.</p>
+              <div class="menu-footer"><span class="price">₹ 420</span><button class="add-btn" onclick="addToCart('Shakshuka',420)">Add +</button></div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=600&q=80" alt="Nutella Waffle Stack"/>
+              <span class="menu-badge veg">VEG</span>
+            </div>
+            <div class="menu-card-body">
+              <h4>Nutella Waffle Stack</h4>
+              <p>Belgian waffles, fresh berries, Nutella drizzle, whipped cream.</p>
+              <div class="menu-footer"><span class="price">₹ 360</span><button class="add-btn" onclick="addToCart('Nutella Waffle Stack',360)">Add +</button></div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1494597564530-871f2b93ac55?w=600&q=80" alt="Açaí Smoothie Bowl"/>
+              <span class="menu-badge veg">VEG</span>
+            </div>
+            <div class="menu-card-body">
+              <h4>Açaí Smoothie Bowl</h4>
+              <p>Frozen açaí, banana, granola, chia seeds, fresh seasonal fruits.</p>
+              <div class="menu-footer"><span class="price">₹ 380</span><button class="add-btn" onclick="addToCart('Açaí Smoothie Bowl',380)">Add +</button></div>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600&q=80" alt="Poha and Jalebi"/>
+              <span class="menu-badge veg">VEG</span>
+            </div>
+            <div class="menu-card-body">
+              <h4>Poha & Jalebi</h4>
+              <p>Flattened rice with mustard seeds, curry leaf, served with crispy jalebi.</p>
+              <div class="menu-footer"><span class="price">₹ 220</span><button class="add-btn" onclick="addToCart('Poha & Jalebi',220)">Add +</button></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div><!-- /container -->
+
+    <!-- CART WIDGET -->
+    <div class="cart-widget" id="cartWidget">
+      <div class="cart-header">
+        <i class="fas fa-shopping-bag"></i>
+        <span id="cartTitle">Your Order</span>
+        <button class="cart-close" id="cartClose"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="cart-items" id="cartItems"></div>
+      <div class="cart-footer">
+        <div class="cart-total">Total: <span id="cartTotal">₹ 0</span></div>
+        <a href="#book-table" class="btn-primary cart-checkout" id="cartCheckout">Proceed to Reserve</a>
+      </div>
+    </div>
+    <button class="cart-fab" id="cartFab">
+      <i class="fas fa-shopping-bag"></i>
+      <span class="cart-badge" id="cartBadge">0</span>
+    </button>
+
+  </section>
+
+  <!-- ══ SECTION 4 · BOOK A TABLE ══ -->
+  <section id="book-table">
+    <div class="container">
+      <div class="book-grid">
+        <div class="book-info">
+          <p class="section-eyebrow">Reservations</p>
+          <h2 class="section-title">Reserve Your Table</h2>
+          <p class="book-desc">Whether it's an intimate dinner for two or a grand celebration, we'll make it extraordinary. Book in advance to guarantee your preferred dining time.</p>
+          <div class="book-features">
+            <div class="bf-item"><i class="fas fa-clock"></i><div><strong>Open Daily</strong><p>12:00 PM – 11:30 PM</p></div></div>
+            <div class="bf-item"><i class="fas fa-phone-alt"></i><div><strong>Instant Confirmation</strong><p>Receive WhatsApp confirmation within 5 mins.</p></div></div>
+            <div class="bf-item"><i class="fas fa-star"></i><div><strong>Special Occasions</strong><p>Tell us about anniversaries, birthdays & surprises.</p></div></div>
+          </div>
+          <div class="book-img-wrap">
+            <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=700&q=80" alt="Restaurant interior" class="book-img"/>
+          </div>
+        </div>
+        <div class="book-form-wrap">
+          <form class="book-form" id="bookingForm">
+            <h3>Make a Reservation</h3>
+            <div class="form-row">
+              <div class="form-group"><label>Full Name</label><input type="text" placeholder="Your name" id="bookName" required/></div>
+              <div class="form-group"><label>Phone Number</label><input type="tel" placeholder="+91 XXXXX XXXXX" id="bookPhone" required/></div>
+            </div>
+            <div class="form-row">
+              <div class="form-group"><label>Date</label><input type="date" id="bookDate" required/></div>
+              <div class="form-group"><label>Time</label>
+                <select id="bookTime" required>
+                  <option value="">Select Time</option>
+                  <option>12:00 PM</option><option>12:30 PM</option><option>01:00 PM</option>
+                  <option>01:30 PM</option><option>07:00 PM</option><option>07:30 PM</option>
+                  <option>08:00 PM</option><option>08:30 PM</option><option>09:00 PM</option>
+                  <option>09:30 PM</option><option>10:00 PM</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group"><label>Number of Guests</label>
+                <select id="bookGuests" required>
+                  <option value="">Select</option>
+                  <option>1 Guest</option><option>2 Guests</option><option>3 Guests</option>
+                  <option>4 Guests</option><option>5 Guests</option><option>6 Guests</option>
+                  <option>7–10 Guests</option><option>10+ Guests (Private Dining)</option>
+                </select>
+              </div>
+              <div class="form-group"><label>Occasion</label>
+                <select id="bookOccasion">
+                  <option value="">Select (optional)</option>
+                  <option>Birthday</option><option>Anniversary</option>
+                  <option>Business Dinner</option><option>Proposal</option>
+                  <option>Family Get-together</option><option>Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group full-width"><label>Special Requests</label>
+              <textarea placeholder="Dietary restrictions, allergies, decoration, etc." id="bookRequests"></textarea>
+            </div>
+            <button type="submit" class="btn-primary full-btn"><i class="fas fa-calendar-check"></i> Confirm Reservation</button>
+          </form>
+          <div class="booking-success" id="bookingSuccess">
+            <div class="success-icon"><i class="fas fa-check-circle"></i></div>
+            <h3>Reservation Confirmed!</h3>
+            <p>We'll WhatsApp you a confirmation at your number within 5 minutes. We look forward to serving you!</p>
+            <button class="btn-outline" onclick="resetBooking()">Make Another Reservation</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ SECTION 5 · REVIEWS ══ -->
+  <section id="reviews">
+    <div class="container">
+      <div class="section-header center">
+        <p class="section-eyebrow">Guest Testimonials</p>
+        <h2 class="section-title">What Our Guests Say</h2>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"The Raan-e-Rajmahal was unlike anything I've had in my life. The flavour depth, the tenderness — pure magic. This is Varanasi's best-kept secret."</p>
+          <div class="reviewer"><div class="reviewer-avatar">AR</div><div><strong>Arjun Rao</strong><span>Mumbai · Google Review</span></div></div>
+        </div>
+        <div class="review-card featured-review">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"We celebrated our anniversary here and the team went above and beyond — roses on the table, a personalised dessert with our names. Truly five-star."</p>
+          <div class="reviewer"><div class="reviewer-avatar">PS</div><div><strong>Priya & Siddharth</strong><span>Delhi · Zomato Review</span></div></div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"As a food writer, I've dined at Michelin-starred restaurants across Europe. The Omakase set here rivals anything I've had in Tokyo. Extraordinary."</p>
+          <div class="reviewer"><div class="reviewer-avatar">KM</div><div><strong>Kavya Menon</strong><span>Food Writer, Hyderabad</span></div></div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★☆</div>
+          <p class="review-text">"The breakfast spread is phenomenal — the Grand Brunch Platter alone is worth the trip. The Masala Chai Flight was a delightful touch. Will definitely be back."</p>
+          <div class="reviewer"><div class="reviewer-avatar">RK</div><div><strong>Rahul Khanna</strong><span>Varanasi · Tripadvisor</span></div></div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"The Lebanese Mezze platter transported me straight to Beirut. Authenticity at every bite. The ambiance, soft lighting, and attentive staff make this the city's finest."</p>
+          <div class="reviewer"><div class="reviewer-avatar">NJ</div><div><strong>Noor Jafri</strong><span>Lucknow · Instagram</span></div></div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Booked a private dining room for my father's retirement. The whole team surprised him with a custom cake, live sitar music, and a framed menu keepsake. Outstanding."</p>
+          <div class="reviewer"><div class="reviewer-avatar">DV</div><div><strong>Divya Verma</strong><span>Varanasi · Google Review</span></div></div>
+        </div>
+      </div>
+      <div class="review-summary">
+        <div class="rs-score">4.9 <span>/5</span></div>
+        <div class="rs-stars">★★★★★</div>
+        <div class="rs-count">Based on 2,400+ reviews</div>
+        <div class="rs-platforms">
+          <span><i class="fab fa-google"></i> Google</span>
+          <span><i class="fas fa-utensils"></i> Zomato</span>
+          <span><i class="fas fa-map-marker-alt"></i> Tripadvisor</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ SECTION 6 · CONTACT ══ -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header center">
+        <p class="section-eyebrow">Get In Touch</p>
+        <h2 class="section-title">We'd Love to Hear From You</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-cards">
+          <a href="tel:+918303215545" class="contact-card">
+            <div class="cc-icon"><i class="fas fa-phone-alt"></i></div>
+            <div class="cc-text"><strong>Call Us</strong><span>+91 83032 15545</span><small>Available daily 10AM – 11PM</small></div>
+          </a>
+          <a href="https://wa.me/918303215545" target="_blank" class="contact-card whatsapp">
+            <div class="cc-icon"><i class="fab fa-whatsapp"></i></div>
+            <div class="cc-text"><strong>WhatsApp</strong><span>+91 83032 15545</span><small>Quick replies within minutes</small></div>
+          </a>
+          <a href="mailto:divyanshu1352@gmail.com" class="contact-card">
+            <div class="cc-icon"><i class="fas fa-envelope"></i></div>
+            <div class="cc-text"><strong>Email Us</strong><span>divyanshu1352@gmail.com</span><small>Response within 24 hours</small></div>
+          </a>
+          <a href="https://www.instagram.com/whynot.rajj_" target="_blank" class="contact-card instagram">
+            <div class="cc-icon"><i class="fab fa-instagram"></i></div>
+            <div class="cc-text"><strong>Instagram</strong><span>@whynot.rajj_</span><small>Follow for daily specials & reels</small></div>
+          </a>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <h3>Send a Message</h3>
+          <div class="form-group"><label>Your Name</label><input type="text" placeholder="Full name" id="contactName" required/></div>
+          <div class="form-group"><label>Email Address</label><input type="email" placeholder="your@email.com" id="contactEmail" required/></div>
+          <div class="form-group"><label>Subject</label>
+            <select id="contactSubject">
+              <option>General Enquiry</option><option>Table Reservation</option>
+              <option>Private Event</option><option>Feedback</option><option>Catering Services</option>
+            </select>
+          </div>
+          <div class="form-group"><label>Message</label><textarea placeholder="Write your message..." id="contactMessage" rows="4" required></textarea></div>
+          <button type="submit" class="btn-primary full-btn"><i class="fas fa-paper-plane"></i> Send Message</button>
+          <div class="contact-success" id="contactSuccess"><i class="fas fa-check-circle"></i> Message sent! We'll reply shortly.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo"><span class="logo-icon">✦</span> THE RAJMAHAL GRAND</div>
+          <p class="footer-tagline">Where tradition meets elegance. An unforgettable dining experience in the heart of Varanasi.</p>
+          <div class="footer-social">
+            <a href="https://wa.me/918303215545" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/whynot.rajj_" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:divyanshu1352@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            <a href="tel:+918303215545" aria-label="Phone"><i class="fas fa-phone-alt"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#menu">Our Menu</a></li>
+            <li><a href="#book-table">Reserve a Table</a></li>
+            <li><a href="#reviews">Guest Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Cuisine</h4>
+          <ul>
+            <li><a href="#menu">Indian Specialties</a></li>
+            <li><a href="#menu">Western Classics</a></li>
+            <li><a href="#menu">International</a></li>
+            <li><a href="#menu">Desserts & Sweets</a></li>
+            <li><a href="#menu">Beverages</a></li>
+            <li><a href="#menu">Breakfast & Brunch</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-contact-col">
+          <h4>Find Us</h4>
+          <div class="footer-contact-info">
+            <p><i class="fas fa-map-marker-alt"></i> 14, Assi Ghat Road,<br/>Varanasi, Uttar Pradesh – 221005</p>
+            <p><i class="fas fa-phone-alt"></i> <a href="tel:+918303215545">+91 83032 15545</a></p>
+            <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/918303215545" target="_blank">WhatsApp Us</a></p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:divyanshu1352@gmail.com">divyanshu1352@gmail.com</a></p>
+            <p><i class="fas fa-clock"></i> Daily 12:00 PM – 11:30 PM</p>
+          </div>
+          <div class="footer-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.1152946688!2d83.00956!3d25.28405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e2db76febcf4d%3A0x5000c44e6e1bcf2e!2sAssi%20Ghat%2C%20Varanasi%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1700000000000"
+              width="100%" height="180" style="border:0;border-radius:12px;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade" title="Rajmahal Grand Location">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© 2024 The Rajmahal Grand. All rights reserved. Crafted with ♥ in Varanasi.</p>
+        <div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
